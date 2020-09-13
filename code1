@@ -1,0 +1,10 @@
+print(tf.__version__)
+
+drive.mount('/content/gdrive')
+path = '/content/gdrive/My Drive/Test/'
+
+NUM_EPOCHS = 500
+batch_size = 128
+chunk_size = 1
+n_chunks = 7
+rnn_size = 25
