@@ -1,0 +1,23 @@
+# readData reads data from the specified pre-processed input data file.
+# The function returns an array of input data points and an array of the
+# corresponding desired outputs.
+def readData(filePath) :
+    x_data = []
+    y_data = []
+    with open(filePath, 'r') as f:
+        for line in f:
+            values = line.split(',')
+            time1 = float(values[0])
+            time2 = float(values[1])
+            time3 = float(values[2])
+            time4 = float(values[3])
+            time5 = float(values[4])
+            time6 = float(values[5])
+            time7 = float(values[6])
+            time8 = float(values[7])
+            newPointx = [time1, time2, time3, time4, time5, time6, time7] # Input
+            newPointy = [time8] # Desired Output
+            x_data.append(newPointx)
+            y_data.append(newPointy)
+    data = [x_data, y_data]
+    return data;
