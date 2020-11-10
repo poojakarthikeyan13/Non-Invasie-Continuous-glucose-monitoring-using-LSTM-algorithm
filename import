@@ -1,9 +1,0 @@
-!pipinstall tensorflow==1.2
-import tensorflow as tf
-#%tensorflow_version 1.x
-import numpy as np
-from tensorflow.examples.tutorials.mnist import input_data
-#from tensorflow.python.ops import rnn, rnn_cell
-from tensorflow.contrib import rnn
-import matplotlib.pyplot as plt
-from google.colab import drive
